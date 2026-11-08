@@ -1,0 +1,92 @@
+# ---------------------------------------------------------
+# Python
+# ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+.python-version.bak
+
+# ---------------------------------------------------------
+# Virtual environments (uv creates .venv)
+# ---------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------
+# Environment variables and secrets
+# ---------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------
+# Testing and coverage
+# ---------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# ---------------------------------------------------------
+# Linting and type checking
+# ---------------------------------------------------------
+.ruff_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+
+# ---------------------------------------------------------
+# Database files (local SQLite or dumps; Postgres data lives in Docker)
+# ---------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+pgdata/
+
+# ---------------------------------------------------------
+# Logs
+# ---------------------------------------------------------
+*.log
+logs/
+
+# ---------------------------------------------------------
+# IDE and editor settings
+# ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------
+# Operating system files
+# ---------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Linux
+.Trash-*
+
+# ---------------------------------------------------------
+# Notes
+# ---------------------------------------------------------
+# Keep committed: pyproject.toml, uv.lock, .env.example,
+# alembic/ (including alembic/versions/), docker-compose.yml
